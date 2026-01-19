@@ -1,44 +1,95 @@
-import { motion } from "framer-motion";
 import "./style.css";
+import {
+  profile,
+  achievements,
+  projects,
+  certifications,
+  experience
+} from "./data";
 
 export default function App() {
-    return (
-        <>
-            <motion.div
-                className="section hero"
-                initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1 }}
-            >
-                <h1 className="title">Arya Patil</h1>
-                <p>Data & Backend Developer · Open Source Contributor</p>
-            </motion.div>
+  return (
+    <div className="app">
 
-            <div className="section">
-                <h2>About</h2>
-                <p>
-                    IT student at VIT Pune passionate about backend, data analytics,
-                    machine learning and open source.
-                </p>
-            </div>
+      {/* HERO */}
+      <header className="hero">
+        <h1>{profile.name}</h1>
+        <p>{profile.intro}</p>
+      </header>
 
-            <div className="section">
-                <h2>Projects</h2>
-                <div className="cards">
-                    <Project title="Sleep Efficiency ML" desc="R² = 0.90 using Random Forest" />
-                    <Project title="Global Layoffs SQL" desc="Data analysis using SQL" />
-                    <Project title="DineSync" desc="QR ordering system with React + Spring Boot" />
-                </div>
+      {/* ACHIEVEMENTS */}
+      <Section title="Achievements">
+        <ul>
+          {achievements.map((a, i) => (
+            <li key={i}>{a}</li>
+          ))}
+        </ul>
+      </Section>
+
+      {/* PROJECTS */}
+      <Section title="Projects">
+        <div className="row">
+          {projects.map((p, i) => (
+            <div className="card" key={i}>
+              <h3>{p.title}</h3>
+              <p>{p.description}</p>
+              <a href={p.link} target="_blank">View Project</a>
             </div>
-        </>
-    );
+          ))}
+        </div>
+      </Section>
+
+      {/* CERTIFICATIONS */}
+      <Section title="Certifications & Qualifications">
+        <div className="grid">
+          {certifications.map((c, i) => (
+            <div className="grid-item" key={i}>{c}</div>
+          ))}
+        </div>
+      </Section>
+
+      {/* EXPERIENCE */}
+      <Section title="Experience">
+        {experience.map((e, i) => (
+          <div className="timeline" key={i}>
+            <h3>{e.role}</h3>
+            <span>{e.org} | {e.period}</span>
+            <p>{e.desc}</p>
+          </div>
+        ))}
+      </Section>
+
+      {/* RESUME */}
+      <Section title="Resume">
+        <a className="btn" href={profile.resume} download>
+          Download Resume
+        </a>
+      </Section>
+
+      {/* CONTACT */}
+      <Section title="Contact">
+        <form className="contact">
+          <input placeholder="Your Name" />
+          <input placeholder="Your Email" />
+          <textarea placeholder="Message" />
+          <button type="submit">Send</button>
+        </form>
+      </Section>
+
+      {/* FOOTER */}
+      <footer>
+        © 2026 Arya Patil
+      </footer>
+
+    </div>
+  );
 }
 
-function Project({ title, desc }) {
-    return (
-        <motion.div className="card" whileHover={{ scale: 1.05 }}>
-            <h3>{title}</h3>
-            <p>{desc}</p>
-        </motion.div>
-    );
+function Section({ title, children }) {
+  return (
+    <section className="section">
+      <h2>{title}</h2>
+      {children}
+    </section>
+  );
 }
