@@ -1,49 +1,77 @@
 export const profile = {
-  name: "Arya Patil",
-  intro: "Data & Backend Developer | Open Source Contributor",
+  name: "YOUR NAME",
+  headline: "Backend • Data • Open Source Engineer",
+  aboutShort: "Short 2–3 line intro about you goes here.",
+  aboutLong:
+    "Write a slightly longer paragraph about your background, interests, and goals. Keep it professional and concise.",
   resume: "/resume.pdf",
   contact: {
-    email: "aryampatil2005@gmail.com",
-    github: "https://github.com/aaryyya",
-    linkedin: "https://www.linkedin.com/in/arya--patil/"
+    email: "your@email.com",
+    github: "https://github.com/yourusername",
+    linkedin: "https://linkedin.com/in/yourprofile"
   }
 };
 
-export const achievements = [
-  "Open Source Contributor – SWOC 2025",
-  "Published research papers in UGC Care journals",
-  "Built multiple full-stack & data-driven applications"
-];
-
+/* ================= PROJECTS (10 TOTAL) ================= */
 export const projects = [
   {
-    title: "Sleep Efficiency Analysis",
-    description: "ML-based sleep efficiency prediction (R² = 0.90).",
-    link: "https://github.com/aaryyya/SleepEfficiencyAnalysisusing-R"
+    title: "Project 1 Name",
+    description:
+      "2–3 lines explaining what the project does, your role, tech used, and outcome.",
+    tech: "React, Spring Boot, MySQL",
+    link: "https://github.com/yourusername/project1"
   },
   {
-    title: "Global Layoffs Analysis",
-    description: "SQL-based exploratory data analysis on layoffs dataset.",
-    link: "https://github.com/aaryyya/analyzing-global-layoffs-with-SQL"
+    title: "Project 2 Name",
+    description:
+      "Add more detail here — problem statement, approach, result.",
+    tech: "Python, Pandas, Power BI",
+    link: ""
   },
+  // ➕ Add up to 10 projects
+];
+
+/* ================= CERTIFICATIONS ================= */
+export const certifications = {
+  professional: [
+    { name: "IBM Machine Learning", link: "" },
+    { name: "IBM DevOps", link: "" },
+    { name: "Google Data Analytics", link: "" },
+    { name: "AWS Cloud Practitioner", link: "" },
+    { name: "Meta Frontend", link: "" }
+  ],
+  participation: [
+    { name: "SWOC 2025", link: "" },
+    { name: "Hackathon XYZ", link: "" },
+    { name: "Open Source Summit", link: "" },
+    { name: "College Tech Fest", link: "" },
+    { name: "Coding Marathon", link: "" }
+  ],
+  workshops: [
+    { name: "Docker Workshop", link: "" },
+    { name: "Power BI Bootcamp", link: "" },
+    { name: "ML Workshop", link: "" },
+    { name: "Web Security Seminar", link: "" },
+    { name: "System Design Talk", link: "" }
+  ]
+};
+
+/* ================= OPEN SOURCE ================= */
+export const openSource = [
   {
-    title: "DineSync",
-    description: "QR-based restaurant ordering system using React & Spring Boot.",
-    link: "#"
+    project: "Project Name",
+    description: "What you contributed and impact.",
+    link: "https://github.com/org/repo"
   }
 ];
 
-export const certifications = [
-  "IBM – Machine Learning with Python",
-  "IBM – DevOps Professional Certificate",
-  "IBM – Data Analytics"
-];
-
-export const experience = [
-  {
-    role: "Open Source Contributor",
-    org: "Social Winter of Code",
-    period: "2025",
-    desc: "Contributed to real-world open-source projects."
-  }
-];
+/* ================= TECH STACK ================= */
+export const techStack = {
+  web: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "React"],
+  backend: ["Spring Boot", "Firebase"],
+  data: ["Python", "Pandas", "NumPy", "Matplotlib", "Excel", "Power BI", "Tableau"],
+  ml: ["Scikit-Learn", "PyTorch", "R"],
+  databases: ["MongoDB", "MySQL"],
+  devops: ["Git", "Docker", "Postman"],
+  ides: ["VS Code", "IntelliJ IDEA"]
+};
