@@ -13,113 +13,78 @@ export default function NetflixPortfolio() {
     };
 
     const portfolioData = {
-        name: "Your Name Here",
-        headline: "Full Stack Developer | Data Scientist | ML Enthusiast",
-        aboutMe: "Passionate developer with expertise in full-stack development, data science, and machine learning. I love building scalable applications and solving complex problems with innovative solutions.",
-        email: "your.email@example.com",
-        github: "https://github.com/yourusername",
-        linkedin: "https://linkedin.com/in/yourusername",
+        name: "Arya Patil",
+        headline: "Data Science and Analysis Enthusiast | Backend Developer ",
+        aboutMe: "Passionate backend Java developer, with a flair for data science and machine learning. I thrive on turning data into insights and building scalable solutions that make an impact!",
+        email: "aryampatil2005@gmail.com",
+        github: "https://github.com/aaryyya",
+        linkedin: "https://www.linkedin.com/in/arya--patil/",
         resumeLink: "https://yourresume.com/resume.pdf",
 
         experience: [
             {
-                title: "Senior Software Engineer",
-                company: "Company Name",
-                duration: "Jan 2023 - Present",
-                description: "Led development of scalable microservices architecture. Improved system performance by 40%. Mentored junior developers and conducted code reviews."
-            },
-            {
-                title: "Full Stack Developer",
-                company: "Previous Company",
-                duration: "Jun 2021 - Dec 2022",
-                description: "Developed responsive web applications using React and Spring Boot. Implemented RESTful APIs and integrated third-party services."
-            },
-            {
-                title: "Junior Developer",
-                company: "First Company",
-                duration: "Jan 2020 - May 2021",
-                description: "Built frontend components and collaborated with backend team. Participated in agile development processes and sprint planning."
+                title: "Product Intern",
+                company: "Erfindin",
+                duration: "Jan 2025 - May 2025",
+                description: "Built VisionGuard ."
             }
         ],
 
         projects: [
+
             {
-                title: "E-Commerce Platform",
-                description: "Full-stack e-commerce application with payment integration, inventory management, and real-time analytics dashboard. Built using React, Spring Boot, and MongoDB.",
-                tech: ["React", "Spring Boot", "MongoDB", "Docker"],
-                link: "https://github.com/yourusername/project1"
+                title: "Sleep Efficiency Prediction and Analysis",
+                description: "Sleep Efficiency Prediction and Analysis analyzes and predicts Sleep Efficiency (ratio of time asleep to time in bed) using machine learning techniques on lifestyle and sleep-stage data, and deploys the final model as an interactive Shiny App.",
+                tech: ["R", "Shiny"],
+                link: "https://github.com/aaryyya/sleep-efficiency-analysis-using-R"
             },
             {
-                title: "ML-Powered Recommendation System",
-                description: "Machine learning model for product recommendations using collaborative filtering and content-based approaches. Achieved 85% accuracy in user preference prediction.",
-                tech: ["Python", "PyTorch", "Pandas", "Flask"],
-                link: "https://github.com/yourusername/project2"
+                title: "DineSync",
+                description: "Developed a full-stack QR Ordering System with a real-time KDS using WebSockets, a Manager Dashboard for order management, and a mobile-first UI utilizing Redux Toolkit for live cart updates and location-based order validation.",
+                tech: ["Java", "React", "Springboot", "JDBC"],
+                link: "https://github.com/aaryyya/dinesync"
             },
             {
-                title: "Real-Time Chat Application",
-                description: "WebSocket-based chat application with group messaging, file sharing, and emoji support. Supports 1000+ concurrent users.",
-                tech: ["React", "Node.js", "Socket.io", "MongoDB"],
-                link: "https://github.com/yourusername/project3"
+                title: "Decoding Data Careers: A Power BI Analysis",
+                description: "Decoding Data Careers, provides an in-depth analysis of various data-related careers using Power BI. The analysis focuses on understanding career satisfaction, salary trends, and other key metrics across different countries📊.",
+                tech: ["PowerBI", "DAX"],
+                link: "https://github.com/aaryyya/decoding-data-careers-a-powerbi-analysis"
             },
             {
-                title: "Data Visualization Dashboard",
-                description: "Interactive dashboard for business analytics with real-time data updates. Includes custom charts and export functionality.",
-                tech: ["React", "D3.js", "Power BI", "Python"],
-                link: "https://github.com/yourusername/project4"
+                title: "ReWear: Community Clothing Exchange",
+                description: "ReWear is a web-based platform that enables users to exchange unused clothing through direct swaps or a point-based redemption system.",
+                tech: ["HTML", "CSS", "JavaScript", "SQL", "React"],
+                link: "https://github.com/aaryyya/ReWear"
             },
             {
-                title: "Task Management System",
-                description: "Kanban-style task management with drag-and-drop, team collaboration, and deadline tracking features.",
-                tech: ["React", "Firebase", "Material-UI"],
-                link: "https://github.com/yourusername/project5"
+                title: "QuizzIQ",
+                description: "QuizzIQ is a dynamic and interactive web application designed for creating and playing engaging quizzes on various subjects.",
+                tech: ["HTML", "CSS", "BootStrap", "JavaScript"],
+                link: "https://github.com/aaryyya/QuizziQ"
             },
             {
-                title: "Weather Forecasting App",
-                description: "Mobile-responsive weather application with 7-day forecast, location-based alerts, and historical data visualization.",
-                tech: ["JavaScript", "React", "OpenWeather API"],
-                link: "https://github.com/yourusername/project6"
-            },
-            {
-                title: "Blockchain Voting System",
-                description: "Secure and transparent voting platform using blockchain technology. Ensures vote integrity and anonymity.",
-                tech: ["Solidity", "React", "Web3.js", "Ethereum"],
-                link: "https://github.com/yourusername/project7"
-            },
-            {
-                title: "Image Classification Model",
-                description: "Deep learning model for multi-class image classification with 92% accuracy on test dataset.",
-                tech: ["Python", "TensorFlow", "OpenCV", "NumPy"],
-                link: "https://github.com/yourusername/project8"
-            },
-            {
-                title: "Social Media Analytics Tool",
-                description: "Automated tool for tracking social media metrics, sentiment analysis, and engagement insights.",
-                tech: ["Python", "Pandas", "Matplotlib", "Twitter API"],
-                link: "https://github.com/yourusername/project9"
-            },
-            {
-                title: "Portfolio CMS",
-                description: "Content management system for developers to showcase their work with customizable themes and SEO optimization.",
-                tech: ["React", "Next.js", "MongoDB", "Tailwind CSS"],
-                link: "https://github.com/yourusername/project10"
+                title: "TCP-IP based Client-Server Food Ordering System",
+                description: "Computer Networking ",
+                tech: ["C", "TCP-IP Protocol"],
+                link: "https://github.com/aaryyya/TCP-IP-based-Client-Server-Food-Ordering-System"
             }
         ],
 
         openSource: [
             {
-                title: "React Component Library",
-                description: "Contributed 15+ reusable components to popular UI library. Fixed critical accessibility issues.",
+                title: "jabref",
+                description: "Contributed in 2+ issues ",
                 repo: "https://github.com/library/components",
-                contributions: "45 commits, 12 PRs merged"
+                contributions: "45+ commits, 1 PR merged"
             },
             {
-                title: "Python Data Science Toolkit",
+                title: "gofr",
                 description: "Added new statistical analysis functions and improved documentation. Maintained backward compatibility.",
                 repo: "https://github.com/toolkit/datascience",
-                contributions: "28 commits, 8 PRs merged"
+                contributions: "28+ commits, 1 PR merged"
             },
             {
-                title: "Open Source API Framework",
+                title: "Appledore",
                 description: "Implemented authentication middleware and rate limiting features. Improved API response time by 30%.",
                 repo: "https://github.com/framework/api",
                 contributions: "32 commits, 10 PRs merged"
@@ -155,42 +120,48 @@ export default function NetflixPortfolio() {
 
         skills: {
             webDevelopment: [
-                { name: "HTML5", icon: "🌐" },
-                { name: "CSS3", icon: "🎨" },
-                { name: "JavaScript", icon: "⚡" },
-                { name: "Bootstrap", icon: "🅱️" },
-                { name: "React", icon: "⚛️" }
+                { name: "HTML5", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+                { name: "CSS3", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+                { name: "JavaScript", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+                { name: "Bootstrap", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" },
+                { name: "React", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" }
             ],
             backendFrameworks: [
-                { name: "Spring Boot", icon: "🍃" },
-                { name: "Firebase", icon: "🔥" }
+                { name: "Spring Boot", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" },
+                { name: "Firebase", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" }
             ],
             dataAnalysis: [
-                { name: "Python", icon: "🐍" },
-                { name: "Pandas", icon: "🐼" },
-                { name: "NumPy", icon: "🔢" },
-                { name: "Matplotlib", icon: "📊" },
-                { name: "Excel", icon: "📈" },
-                { name: "Power BI", icon: "📉" },
-                { name: "Tableau", icon: "📱" }
-            ],
+    { name: "Python", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+    { name: "Pandas", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" },
+    { name: "NumPy", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" },
+    { name: "Matplotlib", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" },
+    { name: "Excel", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" },
+    { name: "Power BI", iconUrl: "https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" },
+    { name: "Tableau", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tableau/tableau-original.svg" }
+],
+
+
             mlDataScience: [
-                { name: "Scikit Learn", icon: "🤖" },
-                { name: "PyTorch", icon: "🔥" },
-                { name: "R", icon: "📊" }
+                { name: "Scikit Learn", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" },
+                { name: "PyTorch", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" },
+                { name: "R", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" }
             ],
+
             databases: [
-                { name: "MongoDB", icon: "🍃" },
-                { name: "MySQL", icon: "🐬" }
+                { name: "MongoDB", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+                { name: "MySQL", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" }
             ],
+
             devOps: [
-                { name: "Git", icon: "📦" },
-                { name: "Docker", icon: "🐳" },
-                { name: "Postman", icon: "📮" }
+                { name: "Git", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+                { name: "Docker", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+                { name: "Postman", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" }
             ],
+
             ides: [
-                { name: "VS Code", icon: "💻" },
-                { name: "IntelliJ", icon: "🧠" }
+                { name: "VS Code", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
+                { name: "IntelliJ", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" },
+                { name: "RStudio", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rstudio/rstudio-original.svg" }
             ]
         }
     };
@@ -200,8 +171,8 @@ export default function NetflixPortfolio() {
             {/* Navbar */}
             <nav className="fixed top-0 w-full bg-black bg-opacity-95 z-50 border-b border-red-900">
                 <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-                    <div className="text-red-600 font-bold text-3xl" style={{ fontFamily: 'Impact, sans-serif' }}>
-                        PORTFOLIO
+                    <div className="text-red-600 font-bold text-3xl" style={{ fontFamily: 'Open Sans, sans-serif' }}>
+                        Arya Patil
                     </div>
                     <div className="flex gap-8">
                         {['home', 'about', 'experience', 'projects', 'opensource', 'skills', 'certifications', 'competitions'].map((item) => (
@@ -267,7 +238,7 @@ export default function NetflixPortfolio() {
             {/* About Me Section */}
             <section id="about" className="min-h-screen flex items-center py-20 px-4">
                 <div className="max-w-4xl mx-auto">
-                    <h2 className="text-5xl font-bold mb-8 text-red-600 border-b-4 border-red-600 pb-4">About Me</h2>
+                    <h2 className="text-5xl font-bold mb-8 text-white-600 border-b-4 border-red-600 pb-4">About Me</h2>
                     <div className="bg-gray-900 p-8 rounded-lg border-2 border-red-900 transform hover:scale-105 transition-transform">
                         <p className="text-xl leading-relaxed text-gray-300">
                             {portfolioData.aboutMe}
@@ -279,7 +250,7 @@ export default function NetflixPortfolio() {
             {/* Experience Section */}
             <section id="experience" className="min-h-screen py-20 px-4 bg-gradient-to-b from-black to-gray-900">
                 <div className="max-w-6xl mx-auto">
-                    <h2 className="text-5xl font-bold mb-12 text-red-600 border-b-4 border-red-600 pb-4 flex items-center gap-3">
+                    <h2 className="text-5xl font-bold mb-12 text-white-600 border-b-4 border-red-600 pb-4 flex items-center gap-3">
                         <Briefcase size={48} />
                         Experience
                     </h2>
@@ -301,7 +272,7 @@ export default function NetflixPortfolio() {
             {/* Projects Section */}
             <section id="projects" className="min-h-screen py-20 px-4">
                 <div className="max-w-6xl mx-auto">
-                    <h2 className="text-5xl font-bold mb-12 text-red-600 border-b-4 border-red-600 pb-4 flex items-center gap-3">
+                    <h2 className="text-5xl font-bold mb-12 text-white-600 border-b-4 border-red-600 pb-4 flex items-center gap-3">
                         <Code size={48} />
                         Projects
                     </h2>
@@ -311,13 +282,13 @@ export default function NetflixPortfolio() {
                                 key={index}
                                 className="bg-gray-900 p-6 rounded-lg border-2 border-gray-800 hover:border-red-600 transform hover:scale-105 hover:shadow-2xl hover:shadow-red-900 transition-all"
                             >
-                                <h3 className="text-2xl font-bold mb-3 text-red-500">{project.title}</h3>
+                                <h3 className="text-2xl font-bold mb-3 text-white-500">{project.title}</h3>
                                 <p className="text-gray-300 mb-4">{project.description}</p>
                                 <div className="flex flex-wrap gap-2 mb-4">
                                     {project.tech.map((tech, i) => (
                                         <span key={i} className="bg-red-900 px-3 py-1 rounded-full text-sm">
-                      {tech}
-                    </span>
+                                            {tech}
+                                        </span>
                                     ))}
                                 </div>
                                 <a
@@ -337,7 +308,7 @@ export default function NetflixPortfolio() {
             {/* Open Source Contributions */}
             <section id="opensource" className="min-h-screen py-20 px-4 bg-gradient-to-b from-black to-gray-900">
                 <div className="max-w-6xl mx-auto">
-                    <h2 className="text-5xl font-bold mb-12 text-red-600 border-b-4 border-red-600 pb-4 flex items-center gap-3">
+                    <h2 className="text-5xl font-bold mb-12 text-white-600 border-b-4 border-red-600 pb-4 flex items-center gap-3">
                         <GitBranch size={48} />
                         Open Source Contributions
                     </h2>
@@ -367,7 +338,7 @@ export default function NetflixPortfolio() {
             {/* Skills Section */}
             <section id="skills" className="min-h-screen py-20 px-4">
                 <div className="max-w-6xl mx-auto">
-                    <h2 className="text-5xl font-bold mb-12 text-red-600 border-b-4 border-red-600 pb-4 flex items-center gap-3">
+                    <h2 className="text-5xl font-bold mb-12 text-white-600 border-b-4 border-red-600 pb-4 flex items-center gap-3">
                         <Star size={48} />
                         Languages & Tools
                     </h2>
@@ -375,11 +346,17 @@ export default function NetflixPortfolio() {
                     <div className="space-y-8">
                         {/* Web Development */}
                         <div className="bg-gray-900 p-6 rounded-lg border-2 border-gray-800">
-                            <h3 className="text-3xl font-bold mb-4 text-red-500">🌐 Web Development</h3>
+                            <h3 className="text-3xl font-bold mb-4 text-white-500">🌐 Web Development</h3>
                             <div className="flex flex-wrap gap-4">
                                 {portfolioData.skills.webDevelopment.map((skill, i) => (
                                     <div key={i} className="bg-red-900 px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">
-                                        <span className="text-lg">{skill.icon} {skill.name}</span>
+                                        <img
+                                            src={skill.iconUrl}
+                                            alt={skill.name}
+                                            title={skill.name}
+                                            className="w-10 h-10"
+                                        />
+
                                     </div>
                                 ))}
                             </div>
@@ -387,11 +364,16 @@ export default function NetflixPortfolio() {
 
                         {/* Backend & Frameworks */}
                         <div className="bg-gray-900 p-6 rounded-lg border-2 border-gray-800">
-                            <h3 className="text-3xl font-bold mb-4 text-red-500">⚙️ Backend & Frameworks</h3>
+                            <h3 className="text-3xl font-bold mb-4 text-white-500">⚙️ Backend & Frameworks</h3>
                             <div className="flex flex-wrap gap-4">
                                 {portfolioData.skills.backendFrameworks.map((skill, i) => (
                                     <div key={i} className="bg-red-900 px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">
-                                        <span className="text-lg">{skill.icon} {skill.name}</span>
+                                        <img
+                                            src={skill.iconUrl}
+                                            alt={skill.name}
+                                            title={skill.name}
+                                            className="w-10 h-10"
+                                        />
                                     </div>
                                 ))}
                             </div>
@@ -399,11 +381,16 @@ export default function NetflixPortfolio() {
 
                         {/* Data Analysis Tools */}
                         <div className="bg-gray-900 p-6 rounded-lg border-2 border-gray-800">
-                            <h3 className="text-3xl font-bold mb-4 text-red-500">🧮 Data Analysis Tools</h3>
+                            <h3 className="text-3xl font-bold mb-4 text-white-500">🧮 Data Analysis Tools</h3>
                             <div className="flex flex-wrap gap-4">
                                 {portfolioData.skills.dataAnalysis.map((skill, i) => (
                                     <div key={i} className="bg-red-900 px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">
-                                        <span className="text-lg">{skill.icon} {skill.name}</span>
+                                        <img
+                                            src={skill.iconUrl}
+                                            alt={skill.name}
+                                            title={skill.name}
+                                            className="w-10 h-10"
+                                        />
                                     </div>
                                 ))}
                             </div>
@@ -411,11 +398,16 @@ export default function NetflixPortfolio() {
 
                         {/* Machine Learning & Data Science */}
                         <div className="bg-gray-900 p-6 rounded-lg border-2 border-gray-800">
-                            <h3 className="text-3xl font-bold mb-4 text-red-500">🧠 Machine Learning & Data Science</h3>
+                            <h3 className="text-3xl font-bold mb-4 text-white-500">🧠 Machine Learning & Data Science</h3>
                             <div className="flex flex-wrap gap-4">
                                 {portfolioData.skills.mlDataScience.map((skill, i) => (
                                     <div key={i} className="bg-red-900 px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">
-                                        <span className="text-lg">{skill.icon} {skill.name}</span>
+                                        <img
+                                            src={skill.iconUrl}
+                                            alt={skill.name}
+                                            title={skill.name}
+                                            className="w-10 h-10"
+                                        />
                                     </div>
                                 ))}
                             </div>
@@ -423,11 +415,16 @@ export default function NetflixPortfolio() {
 
                         {/* Databases */}
                         <div className="bg-gray-900 p-6 rounded-lg border-2 border-gray-800">
-                            <h3 className="text-3xl font-bold mb-4 text-red-500">🛢️ Databases</h3>
+                            <h3 className="text-3xl font-bold mb-4 text-white-500">🛢️ Databases</h3>
                             <div className="flex flex-wrap gap-4">
                                 {portfolioData.skills.databases.map((skill, i) => (
                                     <div key={i} className="bg-red-900 px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">
-                                        <span className="text-lg">{skill.icon} {skill.name}</span>
+                                        <img
+                                            src={skill.iconUrl}
+                                            alt={skill.name}
+                                            title={skill.name}
+                                            className="w-10 h-10"
+                                        />
                                     </div>
                                 ))}
                             </div>
@@ -435,11 +432,16 @@ export default function NetflixPortfolio() {
 
                         {/* DevOps, Version Control & API Tools */}
                         <div className="bg-gray-900 p-6 rounded-lg border-2 border-gray-800">
-                            <h3 className="text-3xl font-bold mb-4 text-red-500">🧩 DevOps, Version Control & API Tools</h3>
+                            <h3 className="text-3xl font-bold mb-4 text-white-500">🧩 DevOps, Version Control & API Tools</h3>
                             <div className="flex flex-wrap gap-4">
                                 {portfolioData.skills.devOps.map((skill, i) => (
                                     <div key={i} className="bg-red-900 px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">
-                                        <span className="text-lg">{skill.icon} {skill.name}</span>
+                                        <img
+                                            src={skill.iconUrl}
+                                            alt={skill.name}
+                                            title={skill.name}
+                                            className="w-10 h-10"
+                                        />
                                     </div>
                                 ))}
                             </div>
@@ -447,11 +449,16 @@ export default function NetflixPortfolio() {
 
                         {/* IDEs & Editors */}
                         <div className="bg-gray-900 p-6 rounded-lg border-2 border-gray-800">
-                            <h3 className="text-3xl font-bold mb-4 text-red-500">💻 IDEs & Editors</h3>
+                            <h3 className="text-3xl font-bold mb-4 text-white-500">💻 IDEs & Editors</h3>
                             <div className="flex flex-wrap gap-4">
                                 {portfolioData.skills.ides.map((skill, i) => (
                                     <div key={i} className="bg-red-900 px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">
-                                        <span className="text-lg">{skill.icon} {skill.name}</span>
+                                        <img
+                                            src={skill.iconUrl}
+                                            alt={skill.name}
+                                            title={skill.name}
+                                            className="w-10 h-10"
+                                        />
                                     </div>
                                 ))}
                             </div>
@@ -463,7 +470,7 @@ export default function NetflixPortfolio() {
             {/* Technical Certifications */}
             <section id="certifications" className="min-h-screen py-20 px-4 bg-gradient-to-b from-black to-gray-900">
                 <div className="max-w-6xl mx-auto">
-                    <h2 className="text-5xl font-bold mb-12 text-red-600 border-b-4 border-red-600 pb-4 flex items-center gap-3">
+                    <h2 className="text-5xl font-bold mb-12 text-white-600 border-b-4 border-red-600 pb-4 flex items-center gap-3">
                         <Award size={48} />
                         Technical Certifications
                     </h2>
@@ -473,7 +480,7 @@ export default function NetflixPortfolio() {
                                 key={index}
                                 className="bg-gray-900 p-6 rounded-lg border-2 border-gray-800 hover:border-red-600 transform hover:scale-105 hover:shadow-2xl hover:shadow-red-900 transition-all"
                             >
-                                <div className="text-4xl mb-3">🏆</div>
+                                {/* <div className="text-4xl mb-3">🏆</div> */}
                                 <h3 className="text-xl font-bold mb-2 text-red-500">{cert.name}</h3>
                                 <p className="text-gray-400 mb-4 text-sm">{cert.issuer}</p>
                                 <a
@@ -493,7 +500,7 @@ export default function NetflixPortfolio() {
             {/* Participation Certificates */}
             <section id="competitions" className="min-h-screen py-20 px-4">
                 <div className="max-w-6xl mx-auto">
-                    <h2 className="text-5xl font-bold mb-12 text-red-600 border-b-4 border-red-600 pb-4 flex items-center gap-3">
+                    <h2 className="text-5xl font-bold mb-12 text-white-600 border-b-4 border-red-600 pb-4 flex items-center gap-3">
                         <Award size={48} />
                         Competition Participation
                     </h2>
@@ -503,7 +510,7 @@ export default function NetflixPortfolio() {
                                 key={index}
                                 className="bg-gray-900 p-6 rounded-lg border-2 border-gray-800 hover:border-red-600 transform hover:scale-105 hover:shadow-2xl hover:shadow-red-900 transition-all"
                             >
-                                <div className="text-4xl mb-3">🎖️</div>
+                                {/* <div className="text-4xl mb-3">🎖️</div> */}
                                 <h3 className="text-xl font-bold mb-2 text-red-500">{cert.name}</h3>
                                 <p className="text-gray-400 mb-4 text-sm">{cert.event}</p>
                                 <a
