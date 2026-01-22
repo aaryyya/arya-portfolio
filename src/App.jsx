@@ -26,7 +26,7 @@ export default function NetflixPortfolio() {
                 title: "Product Intern",
                 company: "Erfindin",
                 duration: "Jan 2025 - May 2025",
-                description: "Built VisionGuard ."
+                description: "Built VisionGuard."
             }
         ],
 
@@ -60,7 +60,7 @@ export default function NetflixPortfolio() {
                 title: "QuizzIQ",
                 description: "QuizzIQ is a dynamic and interactive web application designed for creating and playing engaging quizzes on various subjects.",
                 tech: ["HTML", "CSS", "BootStrap", "JavaScript"],
-                link: "https://github.com/aaryyya/QuizziQ"
+                link: "https://projects-indol-six.vercel.app/home.html"
             },
             {
                 title: "TCP-IP based Client-Server Food Ordering System",
@@ -131,14 +131,14 @@ export default function NetflixPortfolio() {
                 { name: "Firebase", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" }
             ],
             dataAnalysis: [
-    { name: "Python", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
-    { name: "Pandas", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" },
-    { name: "NumPy", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" },
-    { name: "Matplotlib", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" },
-    { name: "Excel", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" },
-    { name: "Power BI", iconUrl: "https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" },
-    { name: "Tableau", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tableau/tableau-original.svg" }
-],
+                { name: "Python", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+                { name: "Pandas", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" },
+                { name: "NumPy", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" },
+                { name: "Matplotlib", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" },
+                { name: "Excel", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" },
+                { name: "Power BI", iconUrl: "https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" },
+                { name: "Tableau", iconUrl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tableau/tableau-original.svg" }
+            ],
 
 
             mlDataScience: [
@@ -181,7 +181,7 @@ export default function NetflixPortfolio() {
                                 onClick={() => scrollToSection(item)}
                                 className="text-white hover:text-red-600 transition-colors capitalize font-medium"
                             >
-                                {item === 'opensource' ? 'Open Source' : item === 'certifications' ? 'Tech Certs' : item === 'competitions' ? 'Competitions' : item}
+                                {item === 'opensource' ? 'Open Source' : item === 'certifications' ? 'Certifications' : item === 'competitions' ? 'Competitions' : item}
                             </button>
                         ))}
                     </div>
@@ -192,9 +192,12 @@ export default function NetflixPortfolio() {
             <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
                 <div className="absolute inset-0 bg-gradient-to-b from-red-900 to-black opacity-50"></div>
                 <div className="relative z-10 text-center px-4">
-                    <h1 className="text-7xl font-bold mb-4 text-red-600" style={{ fontFamily: 'Impact, sans-serif' }}>
-                        {portfolioData.name}
-                    </h1>
+                    <p className="split-hover">
+                        <span aria-hidden="true">ARYA PATIL</span>
+                        <span aria-hidden="true">ARYA PATIL</span>
+                        ARYA PATIL
+                    </p>
+
                     <p className="text-2xl mb-8 text-gray-300">{portfolioData.headline}</p>
 
                     {/* Social Links */}
@@ -280,7 +283,7 @@ export default function NetflixPortfolio() {
                         {portfolioData.projects.map((project, index) => (
                             <div
                                 key={index}
-                                className="bg-gray-900 p-6 rounded-lg border-2 border-gray-800 hover:border-red-600 transform hover:scale-105 hover:shadow-2xl hover:shadow-red-900 transition-all"
+                                className="bg-gray-900 p-6 rounded-lg border-2 border-gray-800 hover:border-red-600 transform hover:scale-105 hover:shadow-2xl hover:shadow-red-900 transition-all duration-700"
                             >
                                 <h3 className="text-2xl font-bold mb-3 text-white-500">{project.title}</h3>
                                 <p className="text-gray-300 mb-4">{project.description}</p>

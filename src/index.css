@@ -23,3 +23,61 @@ code {
 html {
     scroll-behavior: smooth;
 }
+.split-hover {
+  position: relative;
+  display: inline-block;
+  font-size: 4rem;
+  font-weight: 800;
+  color: #dc2626; /* red */
+  cursor: pointer;
+  overflow: hidden;
+}
+
+/* underline animation */
+.split-hover::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 4px;
+  background: #dc2626;
+  transition: all 0.4s ease;
+  transform: translateX(-50%);
+}
+
+/* top & bottom halves */
+.split-hover span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.4s ease;
+}
+
+/* top half */
+.split-hover span:first-child {
+  top: 0;
+  clip-path: inset(0 0 50% 0);
+  transform: translateY(-100%);
+}
+
+/* bottom half */
+.split-hover span:last-child {
+  bottom: 0;
+  clip-path: inset(50% 0 0 0);
+  transform: translateY(100%);
+}
+
+/* hover state */
+.split-hover:hover::before {
+  width: 100%;
+}
+
+.split-hover:hover span:first-child {
+  transform: translateY(0);
+}
+
+.split-hover:hover span:last-child {
+  transform: translateY(0);
+}
