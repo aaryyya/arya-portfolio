@@ -202,22 +202,25 @@ export default function NetflixPortfolio() {
 
                     {/* Social Links */}
                     <div className="flex justify-center gap-6 mb-8">
-                        <a href={`mailto:${portfolioData.email}`} className="transform hover:scale-110 transition-transform">
-                            <div className="bg-red-600 p-4 rounded-full hover:bg-red-700">
-                                <Mail size={32} />
-                            </div>
-                        </a>
-                        <a href={portfolioData.github} target="_blank" rel="noopener noreferrer" className="transform hover:scale-110 transition-transform">
-                            <div className="bg-red-600 p-4 rounded-full hover:bg-red-700">
-                                <Github size={32} />
-                            </div>
-                        </a>
-                        <a href={portfolioData.linkedin} target="_blank" rel="noopener noreferrer" className="transform hover:scale-110 transition-transform">
-                            <div className="bg-red-600 p-4 rounded-full hover:bg-red-700">
-                                <Linkedin size={32} />
-                            </div>
-                        </a>
-                    </div>
+  <a href={`mailto:${portfolioData.email}`} className="transform hover:scale-110 transition-transform">
+    <div className="bg-white p-4 rounded-full hover:bg-gray-200">
+      <Mail size={32} className="text-red-600" />
+    </div>
+  </a>
+
+  <a href={portfolioData.github} target="_blank" rel="noopener noreferrer" className="transform hover:scale-110 transition-transform">
+    <div className="bg-white p-4 rounded-full hover:bg-gray-200">
+      <Github size={32} className="text-red-600" />
+    </div>
+  </a>
+
+  <a href={portfolioData.linkedin} target="_blank" rel="noopener noreferrer" className="transform hover:scale-110 transition-transform">
+    <div className="bg-white p-4 rounded-full hover:bg-gray-200">
+      <Linkedin size={32} className="text-red-600" />
+    </div>
+  </a>
+</div>
+
 
                     {/* Download Resume Button */}
                     <a href={portfolioData.resumeLink} download className="block mb-6">
@@ -387,7 +390,7 @@ export default function NetflixPortfolio() {
                         {portfolioData.openSource.map((contrib, index) => (
                             <div
                                 key={index}
-                                className="bg-gray-900 p-6 rounded-lg border-2 border-gray-800 hover:border-red-600 transform hover:scale-105 hover:shadow-2xl hover:shadow-red-900 transition-all"
+                                className="bg-gray-900 p-6 rounded-lg border-2 border-gray-800 hover:border-red-600 transform hover:scale-105 hover:shadow-2xl hover:shadow-red-900 transition-all duration-700"
                             >
                                 <h3 className="text-2xl font-bold mb-3 text-red-500">{contrib.title}</h3>
                                 <p className="text-gray-300 mb-3">{contrib.description}</p>
@@ -549,10 +552,10 @@ export default function NetflixPortfolio() {
                         {portfolioData.technicalCertifications.map((cert, index) => (
                             <div
                                 key={index}
-                                className="bg-gray-900 p-6 rounded-lg border-2 border-gray-800 hover:border-red-600 transform hover:scale-105 hover:shadow-2xl hover:shadow-red-900 transition-all"
+                                className="bg-gray-900 p-6 rounded-lg border-2 border-gray-800 hover:border-red-600 transform hover:scale-105 hover:shadow-2xl hover:shadow-red-900 transition-all duration-700"
                             >
                                 {/* <div className="text-4xl mb-3">🏆</div> */}
-                                <h3 className="text-xl font-bold mb-2 text-red-500">{cert.name}</h3>
+                                <h3 className="text-xl font-bold mb-2 text-white-500">{cert.name}</h3>
                                 <p className="text-gray-400 mb-4 text-sm">{cert.issuer}</p>
                                 <a
                                     href={cert.link}
@@ -606,7 +609,7 @@ export default function NetflixPortfolio() {
                                 className="bg-gray-900 p-6 rounded-lg border-2 border-gray-800 hover:border-red-600 transform hover:scale-105 hover:shadow-2xl hover:shadow-red-900 transition-all"
                             >
                                 {/* <div className="text-4xl mb-3">🎖️</div> */}
-                                <h3 className="text-xl font-bold mb-2 text-red-500">{cert.name}</h3>
+                                <h3 className="text-xl font-bold mb-2 text-white-500">{cert.name}</h3>
                                 <p className="text-gray-400 mb-4 text-sm">{cert.event}</p>
                                 <a
                                     href={cert.link}
@@ -684,11 +687,8 @@ export default function NetflixPortfolio() {
     © 2026 {portfolioData.name}. All rights reserved.
   </p>
   <p className="text-gray-600 text-sm mt-2">
-    Built with React & Tailwind CSS
   </p>
 </footer>
-
-
         </div>
     );
 }
