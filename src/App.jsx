@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Github, Linkedin, Download, ExternalLink, Award, Code, Briefcase, Star, GitBranch } from 'lucide-react';
+import { Mail, Github, Linkedin, Download, ExternalLink, Award, Code, Briefcase, Star, BookOpen, GitBranch, GraduationCap, Code2 } from 'lucide-react';
 
 export default function NetflixPortfolio() {
     const [activeSection, setActiveSection] = useState('home');
@@ -250,6 +250,74 @@ export default function NetflixPortfolio() {
                 </div>
             </section>
 
+{/* below is time line of education */}
+<section id="education" className="py-20 bg-black text-white">
+  <div className="max-w-6xl mx-auto px-4">
+    <h2 className="text-5xl font-bold mb-12 text-white-600 border-b-4 border-red-600 pb-4 flex items-center gap-3">
+  <GraduationCap size={48} />
+  Education
+</h2>
+
+
+    <div className="relative max-w-4xl mx-auto">
+      {/* Vertical line */}
+      <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-[2px] bg-gradient-to-b from-transparent via-red-600/30 to-transparent"></div>
+
+      {/* Item 1 */}
+      <div className="mb-16 flex justify-between items-center w-full">
+        <div className="w-5/12"></div>
+
+        <div className="z-10 w-6 h-6 bg-red-600 rounded-full shadow-lg shadow-red-900"></div>
+
+        <div className="w-5/12 bg-gray-900 p-6 rounded-lg border border-gray-800 
+        hover:border-red-600 transition-all duration-700 hover:scale-105
+        hover:shadow-[0_0_30px_rgba(220,38,38,0.6)]">
+          <h3 className="text-xl font-bold text-red-500">10th Grade</h3>
+          <p className="text-gray-300 mt-2">School Name</p>
+          <p className="text-gray-400 text-sm mt-1">
+            Year: XXXX • Marks: XX%
+          </p>
+        </div>
+      </div>
+
+      {/* Item 2 */}
+      <div className="mb-16 flex justify-between items-center w-full flex-row-reverse">
+        <div className="w-5/12"></div>
+
+        <div className="z-10 w-6 h-6 bg-red-600 rounded-full shadow-lg shadow-red-900"></div>
+
+        <div className="w-5/12 bg-gray-900 p-6 rounded-lg border border-gray-800 
+        hover:border-red-600 transition-all duration-700 hover:scale-105
+        hover:shadow-[0_0_30px_rgba(220,38,38,0.6)]">
+          <h3 className="text-xl font-bold text-red-500">12th Grade</h3>
+          <p className="text-gray-300 mt-2">College / Junior College Name</p>
+          <p className="text-gray-400 text-sm mt-1">
+            Year: XXXX • Marks: XX%
+          </p>
+        </div>
+      </div>
+
+      {/* Item 3 */}
+      <div className="mb-16 flex justify-between items-center w-full">
+        <div className="w-5/12"></div>
+
+        <div className="z-10 w-6 h-6 bg-red-600 rounded-full shadow-lg shadow-red-900"></div>
+
+        <div className="w-5/12 bg-gray-900 p-6 rounded-lg border border-gray-800 
+        hover:border-red-600 transition-all duration-700 hover:scale-105
+        hover:shadow-[0_0_30px_rgba(220,38,38,0.6)]">
+          <h3 className="text-xl font-bold text-red-500">University</h3>
+          <p className="text-gray-300 mt-2">University Name</p>
+          <p className="text-gray-400 text-sm mt-1">
+            Year: XXXX • CGPA / Percentage
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{/* Above is education timeline */}
+
             {/* Experience Section */}
             <section id="experience" className="min-h-screen py-20 px-4 bg-gradient-to-b from-black to-gray-900">
                 <div className="max-w-6xl mx-auto">
@@ -261,7 +329,7 @@ export default function NetflixPortfolio() {
                         {portfolioData.experience.map((exp, index) => (
                             <div
                                 key={index}
-                                className="bg-gray-900 p-6 rounded-lg border-l-4 border-red-600 transform hover:scale-105 hover:shadow-2xl hover:shadow-red-900 transition-all"
+                                className="bg-gray-900 p-6 rounded-lg border-l-4 border-red-600 transform hover:scale-105 hover:shadow-2xl hover:shadow-red-900 transition-all duration-700"
                             >
                                 <h3 className="text-2xl font-bold text-red-500">{exp.title}</h3>
                                 <p className="text-lg text-gray-400 mb-2">{exp.company} | {exp.duration}</p>
@@ -276,7 +344,7 @@ export default function NetflixPortfolio() {
             <section id="projects" className="min-h-screen py-20 px-4">
                 <div className="max-w-6xl mx-auto">
                     <h2 className="text-5xl font-bold mb-12 text-white-600 border-b-4 border-red-600 pb-4 flex items-center gap-3">
-                        <Code size={48} />
+                        <Code2 size={48} />
                         Projects
                     </h2>
                     <div className="grid md:grid-cols-2 gap-6">
@@ -300,7 +368,7 @@ export default function NetflixPortfolio() {
                                     rel="noopener noreferrer"
                                     className="text-red-500 hover:text-red-400 flex items-center gap-2 font-semibold"
                                 >
-                                    View Project <ExternalLink size={18} />
+                                     <Github size={18} />
                                 </a>
                             </div>
                         ))}
@@ -330,7 +398,7 @@ export default function NetflixPortfolio() {
                                     rel="noopener noreferrer"
                                     className="text-red-500 hover:text-red-400 flex items-center gap-2 font-semibold"
                                 >
-                                    View Repository <ExternalLink size={18} />
+                                    View Repository <Github size={18} />
                                 </a>
                             </div>
                         ))}
@@ -342,7 +410,7 @@ export default function NetflixPortfolio() {
             <section id="skills" className="min-h-screen py-20 px-4">
                 <div className="max-w-6xl mx-auto">
                     <h2 className="text-5xl font-bold mb-12 text-white-600 border-b-4 border-red-600 pb-4 flex items-center gap-3">
-                        <Star size={48} />
+                        <Code2 size={48} />
                         Languages & Tools
                     </h2>
 
@@ -352,7 +420,7 @@ export default function NetflixPortfolio() {
                             <h3 className="text-3xl font-bold mb-4 text-white-500">🌐 Web Development</h3>
                             <div className="flex flex-wrap gap-4">
                                 {portfolioData.skills.webDevelopment.map((skill, i) => (
-                                    <div key={i} className="bg-red-900 px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">
+                                    <div key={i} className="bg-red-950 px-4 py-2 rounded-lg hover:bg-red-900 transition-colors">
                                         <img
                                             src={skill.iconUrl}
                                             alt={skill.name}
@@ -370,7 +438,7 @@ export default function NetflixPortfolio() {
                             <h3 className="text-3xl font-bold mb-4 text-white-500">⚙️ Backend & Frameworks</h3>
                             <div className="flex flex-wrap gap-4">
                                 {portfolioData.skills.backendFrameworks.map((skill, i) => (
-                                    <div key={i} className="bg-red-900 px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">
+                                    <div key={i} className="bg-red-950 px-4 py-2 rounded-lg hover:bg-red-900 transition-colors">
                                         <img
                                             src={skill.iconUrl}
                                             alt={skill.name}
@@ -387,7 +455,7 @@ export default function NetflixPortfolio() {
                             <h3 className="text-3xl font-bold mb-4 text-white-500">🧮 Data Analysis Tools</h3>
                             <div className="flex flex-wrap gap-4">
                                 {portfolioData.skills.dataAnalysis.map((skill, i) => (
-                                    <div key={i} className="bg-red-900 px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">
+                                    <div key={i} className="bg-red-950 px-4 py-2 rounded-lg hover:bg-red-900 transition-colors">
                                         <img
                                             src={skill.iconUrl}
                                             alt={skill.name}
@@ -404,7 +472,7 @@ export default function NetflixPortfolio() {
                             <h3 className="text-3xl font-bold mb-4 text-white-500">🧠 Machine Learning & Data Science</h3>
                             <div className="flex flex-wrap gap-4">
                                 {portfolioData.skills.mlDataScience.map((skill, i) => (
-                                    <div key={i} className="bg-red-900 px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">
+                                    <div key={i} className="bg-red-950 px-4 py-2 rounded-lg hover:bg-red-900 transition-colors">
                                         <img
                                             src={skill.iconUrl}
                                             alt={skill.name}
@@ -421,7 +489,7 @@ export default function NetflixPortfolio() {
                             <h3 className="text-3xl font-bold mb-4 text-white-500">🛢️ Databases</h3>
                             <div className="flex flex-wrap gap-4">
                                 {portfolioData.skills.databases.map((skill, i) => (
-                                    <div key={i} className="bg-red-900 px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">
+                                    <div key={i} className="bg-red-950 px-4 py-2 rounded-lg hover:bg-red-900 transition-colors">
                                         <img
                                             src={skill.iconUrl}
                                             alt={skill.name}
@@ -438,7 +506,7 @@ export default function NetflixPortfolio() {
                             <h3 className="text-3xl font-bold mb-4 text-white-500">🧩 DevOps, Version Control & API Tools</h3>
                             <div className="flex flex-wrap gap-4">
                                 {portfolioData.skills.devOps.map((skill, i) => (
-                                    <div key={i} className="bg-red-900 px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">
+                                    <div key={i} className="bg-red-950 px-4 py-2 rounded-lg hover:bg-red-900 transition-colors">
                                         <img
                                             src={skill.iconUrl}
                                             alt={skill.name}
@@ -455,7 +523,7 @@ export default function NetflixPortfolio() {
                             <h3 className="text-3xl font-bold mb-4 text-white-500">💻 IDEs & Editors</h3>
                             <div className="flex flex-wrap gap-4">
                                 {portfolioData.skills.ides.map((skill, i) => (
-                                    <div key={i} className="bg-red-900 px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">
+                                    <div key={i} className="bg-red-950 px-4 py-2 rounded-lg hover:bg-red-900 transition-colors">
                                         <img
                                             src={skill.iconUrl}
                                             alt={skill.name}
@@ -500,6 +568,30 @@ export default function NetflixPortfolio() {
                 </div>
             </section>
 
+            {/* this is for the blogs section */}
+            <section id="blogs" className="py-24 bg-gradient-to-b from-black to-gray-900 text-center">
+                <h2 className="text-4xl font-bold text-red-600 mb-6">
+                    My Blogs
+                </h2>
+
+                <p className="text-gray-400 max-w-2xl mx-auto mb-10">
+                    I write about technology, data science, cybersecurity, and my learning journey.
+                    Check out my blogs where I share insights, tutorials, and experiences.
+                </p>
+
+                <a
+                    href="https://your-blog-link.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-red-600 text-white px-10 py-4 rounded-lg font-bold text-lg
+               hover:bg-red-700 hover:scale-110 transition-all duration-700 shadow-lg shadow-red-900"
+                >
+                    Visit My Blogs →
+                </a>
+            </section>
+
+            {/* Above is blog section */}
+
             {/* Participation Certificates */}
             <section id="competitions" className="min-h-screen py-20 px-4">
                 <div className="max-w-6xl mx-auto">
@@ -530,11 +622,73 @@ export default function NetflixPortfolio() {
                 </div>
             </section>
 
+
+            
+
             {/* Footer */}
-            <footer className="bg-black border-t border-red-900 py-8 text-center">
-                <p className="text-gray-500">© 2026 {portfolioData.name}. All rights reserved.</p>
-                <p className="text-gray-600 text-sm mt-2">Built with React & Tailwind CSS</p>
-            </footer>
+            <footer className="bg-black border-t border-red-900 py-10 text-center">
+  {/* Social Icons */}
+  <div className="flex justify-center gap-6 mb-6">
+    
+    {/* LinkedIn */}
+    <a
+      href="https://www.linkedin.com/in/YOUR_LINKEDIN"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-gray-400 hover:text-red-500 transition-all"
+    >
+      <Linkedin
+        size={26}
+        className="hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(220,38,38,0.7)] transition-all"
+      />
+    </a>
+
+    {/* GitHub */}
+    <a
+      href="https://github.com/YOUR_GITHUB"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-gray-400 hover:text-red-500 transition-all"
+    >
+      <Github
+        size={26}
+        className="hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(220,38,38,0.7)] transition-all"
+      />
+    </a>
+
+    {/* Blogs */}
+    <a
+      href="/blogs"
+      className="text-gray-400 hover:text-red-500 transition-all"
+    >
+      <BookOpen
+        size={26}
+        className="hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(220,38,38,0.7)] transition-all"
+      />
+    </a>
+
+    {/* Email */}
+    <a
+      href="mailto:your@email.com"
+      className="text-gray-400 hover:text-red-500 transition-all"
+    >
+      <Mail
+        size={26}
+        className="hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(220,38,38,0.7)] transition-all"
+      />
+    </a>
+  </div>
+
+  {/* Footer Text */}
+  <p className="text-gray-500">
+    © 2026 {portfolioData.name}. All rights reserved.
+  </p>
+  <p className="text-gray-600 text-sm mt-2">
+    Built with React & Tailwind CSS
+  </p>
+</footer>
+
+
         </div>
     );
 }
