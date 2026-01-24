@@ -264,7 +264,7 @@ export default function NetflixPortfolio() {
 
     <div className="relative max-w-4xl mx-auto">
       {/* Vertical line */}
-      <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-[2px] bg-gradient-to-b from-transparent via-red-600/30 to-transparent"></div>
+      <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-[3px] bg-gradient-to-b from-transparent via-red-400/30 to-transparent"></div>
 
       {/* Item 1 */}
       <div className="mb-16 flex justify-between items-center w-full">
@@ -276,9 +276,9 @@ export default function NetflixPortfolio() {
         hover:border-red-600 transition-all duration-700 hover:scale-105
         hover:shadow-[0_0_30px_rgba(220,38,38,0.6)]">
           <h3 className="text-xl font-bold text-red-500">10th Grade</h3>
-          <p className="text-gray-300 mt-2">School Name</p>
+          <p className="text-gray-300 mt-2">Universal Knowledge School, Satara. </p>
           <p className="text-gray-400 text-sm mt-1">
-            Year: XXXX • Marks: XX%
+            Year: 2020 • Marks: 89.4%
           </p>
         </div>
       </div>
@@ -293,9 +293,9 @@ export default function NetflixPortfolio() {
         hover:border-red-600 transition-all duration-700 hover:scale-105
         hover:shadow-[0_0_30px_rgba(220,38,38,0.6)]">
           <h3 className="text-xl font-bold text-red-500">12th Grade</h3>
-          <p className="text-gray-300 mt-2">College / Junior College Name</p>
+          <p className="text-gray-300 mt-2">Ligade Patil Junior College of Science, Karad.</p>
           <p className="text-gray-400 text-sm mt-1">
-            Year: XXXX • Marks: XX%
+            Year: 2022 • Marks: 84.17%
           </p>
         </div>
       </div>
@@ -310,9 +310,9 @@ export default function NetflixPortfolio() {
         hover:border-red-600 transition-all duration-700 hover:scale-105
         hover:shadow-[0_0_30px_rgba(220,38,38,0.6)]">
           <h3 className="text-xl font-bold text-red-500">University</h3>
-          <p className="text-gray-300 mt-2">University Name</p>
+          <p className="text-gray-300 mt-2">Vishwakarma Institute of Technology, Pune.</p>
           <p className="text-gray-400 text-sm mt-1">
-            Year: XXXX • CGPA / Percentage
+            Year: 2026 • 8.19 
           </p>
         </div>
       </div>
