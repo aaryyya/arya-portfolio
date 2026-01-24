@@ -98,13 +98,13 @@ export default function NetflixPortfolio() {
         ],
 
         technicalCertifications: [
-            { name: "AWS Certified Solutions Architect", issuer: "Amazon Web Services", link: "https://cert-link.com/1" },
-            { name: "Google Cloud Professional Developer", issuer: "Google Cloud", link: "https://cert-link.com/2" },
-            { name: "MongoDB Certified Developer", issuer: "MongoDB University", link: "https://cert-link.com/3" },
-            { name: "Oracle Certified Java Programmer", issuer: "Oracle", link: "https://cert-link.com/4" },
-            { name: "Microsoft Azure Fundamentals", issuer: "Microsoft", link: "https://cert-link.com/5" },
-            { name: "TensorFlow Developer Certificate", issuer: "TensorFlow", link: "https://cert-link.com/6" },
-            { name: "React Advanced Certification", issuer: "Meta", link: "https://cert-link.com/7" },
+            { name: " Generative AI: Enhance your Data Analytics Career", issuer: "IBM-Coursera", link: "https://coursera.org/share/7e05abb29ba8c2ad02879c756611b283" },
+            { name: "Generative AI and LLMs: Architecture and Data Preparation", issuer: "IBM-Coursera", link: "https://coursera.org/share/9e8a0d37922ac389cbf2d154b012f30b" },
+            { name: "IBM DevOps and Software Engineering", issuer: "MongoDB University", link: "https://www.coursera.org/account/accomplishments/professional-cert/certificate/OWBN43WXFL3C" },
+            { name: "Machine Learning with Python", issuer: "IBM-Coursera", link: "https://www.coursera.org/account/accomplishments/certificate/W1UYSJW09P9Z" },
+            { name: "GeeksforGeeks API Bootcamp: Summer Edition - Sponsored by Postman",issuer: "GeeksforGeeks", link: "https://media.geeksforgeeks.org/courses/certificates/c4aed87b815629b78ebc786d1eb91a35.pdf" },
+            { name: "Fundamentals of Deep Learning", issuer: "NVIDIA", link: "https://learn.nvidia.com/certificates?id=uMz_XapsTCe_imUEgt_TEQ" },
+            { name: "Java (Basics) by HackerRank", issuer: "HackerRank", link: "https://www.hackerrank.com/certificates/f3267a856144" },
             { name: "Docker Certified Associate", issuer: "Docker", link: "https://cert-link.com/8" },
             { name: "Kubernetes Administrator", issuer: "CNCF", link: "https://cert-link.com/9" },
             { name: "Data Science Professional", issuer: "IBM", link: "https://cert-link.com/10" }
