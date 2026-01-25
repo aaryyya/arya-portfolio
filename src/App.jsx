@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import { Mail, Github, Linkedin, Download, ExternalLink, Award, Briefcase, BookOpen, GitBranch, GraduationCap, Code2 } from 'lucide-react';
 
 export default function NetflixPortfolio() {
