@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { Mail, Github, Linkedin, Download, ExternalLink, Award, Briefcase, BookOpen, GitBranch, GraduationCap, Code2 } from 'lucide-react';
 
 export default function NetflixPortfolio() {
-    const [activeSection, setActiveSection] = useState('home');
+    // const [activeSection, setActiveSection] = useState('home');
 
     const scrollToSection = (sectionId) => {
         const element = document.getElementById(sectionId);
         if (element) {
             element.scrollIntoView({ behavior: 'smooth' });
-            setActiveSection(sectionId);
+            // setActiveSection(sectionId);
         }
     };
 
