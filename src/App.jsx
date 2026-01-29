@@ -105,9 +105,9 @@ export default function NetflixPortfolio() {
             { name: "GeeksforGeeks API Bootcamp: Summer Edition - Sponsored by Postman",issuer: "GeeksforGeeks", link: "https://media.geeksforgeeks.org/courses/certificates/c4aed87b815629b78ebc786d1eb91a35.pdf" },
             { name: "Fundamentals of Deep Learning", issuer: "NVIDIA", link: "https://learn.nvidia.com/certificates?id=uMz_XapsTCe_imUEgt_TEQ" },
             { name: "Java (Basics) by HackerRank", issuer: "HackerRank", link: "https://www.hackerrank.com/certificates/f3267a856144" },
-            { name: "Docker Certified Associate", issuer: "Docker", link: "https://cert-link.com/8" },
-            { name: "Kubernetes Administrator", issuer: "CNCF", link: "https://cert-link.com/9" },
-            { name: "Data Science Professional", issuer: "IBM", link: "https://cert-link.com/10" }
+            { name: "Master Microsoft Power BI", issuer: "LinkedIn", link: "https://www.linkedin.com/learning/certificates/30193738ea087489406e162bfe77e605986e24a55c6d1efc6d0a7c0aa23c5310?trk=share_certificate" },
+            { name: "Advance Your Skills in Natural Language Processing", issuer: "LinkedIn", link: "https://www.linkedin.com/learning/certificates/07c07949a8e98497cf559e4fd45baa176c8f1993d56e7c04c0ead5abf799b304?trk=share_certificate" },
+            // { name: "Data Science Professional", issuer: "IBM", link: "https://cert-link.com/10" }
         ],
 
         participationCertificates: [
