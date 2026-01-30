@@ -303,7 +303,8 @@ export default function NetflixPortfolio() {
 
 
                     {/* Download Resume Button */}
-                    <a href={portfolioData.resumeLink} download className="block mb-6">
+                    <a href="/Arya_Patil_VIT_" download className="block mb-6">
+
                         <button className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg flex items-center gap-2 mx-auto transform hover:scale-105 transition-transform font-bold text-lg">
                             <Download size={24} />
                             Download Resume
