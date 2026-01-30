@@ -12,6 +12,12 @@ export default function NetflixPortfolio() {
         }
     };
 
+    const closeMenu = () => {
+  const checkbox = document.getElementById("nav-toggle");
+  if (checkbox) checkbox.checked = false;
+};
+
+
     const portfolioData = {
         name: "Arya Patil",
         headline: "Data Science and Analysis Enthusiast | Backend Developer ",
@@ -169,24 +175,98 @@ export default function NetflixPortfolio() {
     return (
         <div className="min-h-screen bg-black text-white" style={{ fontFamily: 'Arial, sans-serif' }}>
             {/* Navbar */}
-            <nav className="fixed top-0 w-full bg-black bg-opacity-95 z-50 border-b border-red-900">
-                <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-                    <div className="text-red-600 font-bold text-3xl" style={{ fontFamily: 'Open Sans, sans-serif' }}>
-                        Arya Patil
-                    </div>
-                    <div className="flex gap-8">
-                        {['home', 'about', 'experience', 'projects', 'opensource', 'skills', 'certifications', 'competitions'].map((item) => (
-                            <button
-                                key={item}
-                                onClick={() => scrollToSection(item)}
-                                className="text-white hover:text-red-600 transition-colors capitalize font-medium"
-                            >
-                                {item === 'opensource' ? 'Open Source' : item === 'certifications' ? 'Certifications' : item === 'competitions' ? 'Competitions' : item}
-                            </button>
-                        ))}
-                    </div>
-                </div>
-            </nav>
+<nav className="fixed top-0 w-full bg-black bg-opacity-95 z-50 border-b border-red-900">
+
+  {/* 🔑 CHECKBOX — must be here */}
+  <input type="checkbox" id="nav-toggle" className="hidden peer" />
+
+  {/* TOP BAR */}
+  <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+
+    {/* Logo */}
+    <div className="text-red-600 font-bold text-3xl">
+      Arya Patil
+    </div>
+
+    {/* Hamburger */}
+    <label
+      htmlFor="nav-toggle"
+      className="md:hidden text-white cursor-pointer"
+    >
+      <svg
+        className="w-8 h-8"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+      >
+        <path strokeLinecap="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </label>
+
+    {/* Desktop Menu */}
+    <div className="hidden md:flex gap-8">
+      {[
+        "home",
+        "about",
+        "experience",
+        "projects",
+        "opensource",
+        "skills",
+        "certifications",
+        "competitions",
+      ].map((item) => (
+        <a
+          key={item}
+          href={`#${item}`}
+          className="text-white hover:text-red-600 transition-colors capitalize font-medium"
+        >
+          {item === "opensource"
+            ? "Open Source"
+            : item === "certifications"
+            ? "Certifications"
+            : item === "competitions"
+            ? "Competitions"
+            : item}
+        </a>
+      ))}
+    </div>
+  </div>
+
+  {/* ✅ MOBILE MENU — sibling of checkbox */}
+  <div className="md:hidden max-h-0 peer-checked:max-h-[500px] overflow-hidden transition-all duration-500 border-t border-red-900 bg-black">
+    <div className="flex flex-col px-6 py-4 space-y-4">
+      {[
+        "home",
+        "about",
+        "experience",
+        "projects",
+        "opensource",
+        "skills",
+        "certifications",
+        "competitions",
+      ].map((item) => (
+        <a
+          key={item}
+          href={`#${item}`}
+          onClick={closeMenu}
+          className="text-white hover:text-red-600 transition-colors capitalize font-medium"
+        >
+          {item === "opensource"
+            ? "Open Source"
+            : item === "certifications"
+            ? "Certifications"
+            : item === "competitions"
+            ? "Competitions"
+            : item}
+        </a>
+      ))}
+    </div>
+  </div>
+
+</nav>
+
+
 
             {/* Home Section */}
             <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
