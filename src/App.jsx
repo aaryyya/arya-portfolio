@@ -13,9 +13,9 @@ export default function NetflixPortfolio() {
     };
 
     const closeMenu = () => {
-  const checkbox = document.getElementById("nav-toggle");
-  if (checkbox) checkbox.checked = false;
-};
+        const checkbox = document.getElementById("nav-toggle");
+        if (checkbox) checkbox.checked = false;
+    };
 
 
     const portfolioData = {
@@ -108,7 +108,7 @@ export default function NetflixPortfolio() {
             { name: "Generative AI and LLMs: Architecture and Data Preparation", issuer: "IBM-Coursera", link: "https://coursera.org/share/9e8a0d37922ac389cbf2d154b012f30b" },
             { name: "IBM DevOps and Software Engineering", issuer: "MongoDB University", link: "https://www.coursera.org/account/accomplishments/professional-cert/certificate/OWBN43WXFL3C" },
             { name: "Machine Learning with Python", issuer: "IBM-Coursera", link: "https://www.coursera.org/account/accomplishments/certificate/W1UYSJW09P9Z" },
-            { name: "GeeksforGeeks API Bootcamp: Summer Edition - Sponsored by Postman",issuer: "GeeksforGeeks", link: "https://media.geeksforgeeks.org/courses/certificates/c4aed87b815629b78ebc786d1eb91a35.pdf" },
+            { name: "GeeksforGeeks API Bootcamp: Summer Edition - Sponsored by Postman", issuer: "GeeksforGeeks", link: "https://media.geeksforgeeks.org/courses/certificates/c4aed87b815629b78ebc786d1eb91a35.pdf" },
             { name: "Fundamentals of Deep Learning", issuer: "NVIDIA", link: "https://learn.nvidia.com/certificates?id=uMz_XapsTCe_imUEgt_TEQ" },
             { name: "Java (Basics) by HackerRank", issuer: "HackerRank", link: "https://www.hackerrank.com/certificates/f3267a856144" },
             { name: "Master Microsoft Power BI", issuer: "LinkedIn", link: "https://www.linkedin.com/learning/certificates/30193738ea087489406e162bfe77e605986e24a55c6d1efc6d0a7c0aa23c5310?trk=share_certificate" },
@@ -175,96 +175,96 @@ export default function NetflixPortfolio() {
     return (
         <div className="min-h-screen bg-black text-white" style={{ fontFamily: 'Arial, sans-serif' }}>
             {/* Navbar */}
-<nav className="fixed top-0 w-full bg-black bg-opacity-95 z-50 border-b border-red-900">
+            <nav className="fixed top-0 w-full bg-black bg-opacity-95 z-50 border-b border-red-900">
 
-  {/* 🔑 CHECKBOX — must be here */}
-  <input type="checkbox" id="nav-toggle" className="hidden peer" />
+                {/* 🔑 CHECKBOX — must be here */}
+                <input type="checkbox" id="nav-toggle" className="hidden peer" />
 
-  {/* TOP BAR */}
-  <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+                {/* TOP BAR */}
+                <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
 
-    {/* Logo */}
-    <div className="text-red-600 font-bold text-3xl">
-      Arya Patil
-    </div>
+                    {/* Logo */}
+                    <div className="text-red-600 font-bold text-3xl">
+                        Arya Patil
+                    </div>
 
-    {/* Hamburger */}
-    <label
-      htmlFor="nav-toggle"
-      className="md:hidden text-white cursor-pointer"
-    >
-      <svg
-        className="w-8 h-8"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        viewBox="0 0 24 24"
-      >
-        <path strokeLinecap="round" d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
-    </label>
+                    {/* Hamburger */}
+                    <label
+                        htmlFor="nav-toggle"
+                        className="md:hidden text-white cursor-pointer"
+                    >
+                        <svg
+                            className="w-8 h-8"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            viewBox="0 0 24 24"
+                        >
+                            <path strokeLinecap="round" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </label>
 
-    {/* Desktop Menu */}
-    <div className="hidden md:flex gap-8">
-      {[
-        "home",
-        "about",
-        "experience",
-        "projects",
-        "opensource",
-        "skills",
-        "certifications",
-        "competitions",
-      ].map((item) => (
-        <a
-          key={item}
-          href={`#${item}`}
-          className="text-white hover:text-red-600 transition-colors capitalize font-medium"
-        >
-          {item === "opensource"
-            ? "Open Source"
-            : item === "certifications"
-            ? "Certifications"
-            : item === "competitions"
-            ? "Competitions"
-            : item}
-        </a>
-      ))}
-    </div>
-  </div>
+                    {/* Desktop Menu */}
+                    <div className="hidden md:flex gap-8">
+                        {[
+                            "home",
+                            "about",
+                            "experience",
+                            "projects",
+                            "opensource",
+                            "skills",
+                            "certifications",
+                            "competitions",
+                        ].map((item) => (
+                            <a
+                                key={item}
+                                href={`#${item}`}
+                                className="text-white hover:text-red-600 transition-colors capitalize font-medium"
+                            >
+                                {item === "opensource"
+                                    ? "Open Source"
+                                    : item === "certifications"
+                                        ? "Certifications"
+                                        : item === "competitions"
+                                            ? "Competitions"
+                                            : item}
+                            </a>
+                        ))}
+                    </div>
+                </div>
 
-  {/* ✅ MOBILE MENU — sibling of checkbox */}
-  <div className="md:hidden max-h-0 peer-checked:max-h-[500px] overflow-hidden transition-all duration-500 border-t border-red-900 bg-black">
-    <div className="flex flex-col px-6 py-4 space-y-4">
-      {[
-        "home",
-        "about",
-        "experience",
-        "projects",
-        "opensource",
-        "skills",
-        "certifications",
-        "competitions",
-      ].map((item) => (
-        <a
-          key={item}
-          href={`#${item}`}
-          onClick={closeMenu}
-          className="text-white hover:text-red-600 transition-colors capitalize font-medium"
-        >
-          {item === "opensource"
-            ? "Open Source"
-            : item === "certifications"
-            ? "Certifications"
-            : item === "competitions"
-            ? "Competitions"
-            : item}
-        </a>
-      ))}
-    </div>
-  </div>
+                {/* ✅ MOBILE MENU — sibling of checkbox */}
+                <div className="md:hidden max-h-0 peer-checked:max-h-[500px] overflow-hidden transition-all duration-500 border-t border-red-900 bg-black">
+                    <div className="flex flex-col px-6 py-4 space-y-4">
+                        {[
+                            "home",
+                            "about",
+                            "experience",
+                            "projects",
+                            "opensource",
+                            "skills",
+                            "certifications",
+                            "competitions",
+                        ].map((item) => (
+                            <a
+                                key={item}
+                                href={`#${item}`}
+                                onClick={closeMenu}
+                                className="text-white hover:text-red-600 transition-colors capitalize font-medium"
+                            >
+                                {item === "opensource"
+                                    ? "Open Source"
+                                    : item === "certifications"
+                                        ? "Certifications"
+                                        : item === "competitions"
+                                            ? "Competitions"
+                                            : item}
+                            </a>
+                        ))}
+                    </div>
+                </div>
 
-</nav>
+            </nav>
 
 
 
@@ -282,24 +282,24 @@ export default function NetflixPortfolio() {
 
                     {/* Social Links */}
                     <div className="flex justify-center gap-6 mb-8">
-  <a href={`mailto:${portfolioData.email}`} className="transform hover:scale-110 transition-transform">
-    <div className="bg-white p-4 rounded-full hover:bg-gray-200">
-      <Mail size={32} className="text-red-600" />
-    </div>
-  </a>
+                        <a href={`mailto:${portfolioData.email}`} className="transform hover:scale-110 transition-transform">
+                            <div className="bg-white p-4 rounded-full hover:bg-gray-200">
+                                <Mail size={32} className="text-red-600" />
+                            </div>
+                        </a>
 
-  <a href={portfolioData.github} target="_blank" rel="noopener noreferrer" className="transform hover:scale-110 transition-transform">
-    <div className="bg-white p-4 rounded-full hover:bg-gray-200">
-      <Github size={32} className="text-red-600" />
-    </div>
-  </a>
+                        <a href={portfolioData.github} target="_blank" rel="noopener noreferrer" className="transform hover:scale-110 transition-transform">
+                            <div className="bg-white p-4 rounded-full hover:bg-gray-200">
+                                <Github size={32} className="text-red-600" />
+                            </div>
+                        </a>
 
-  <a href={portfolioData.linkedin} target="_blank" rel="noopener noreferrer" className="transform hover:scale-110 transition-transform">
-    <div className="bg-white p-4 rounded-full hover:bg-gray-200">
-      <Linkedin size={32} className="text-red-600" />
-    </div>
-  </a>
-</div>
+                        <a href={portfolioData.linkedin} target="_blank" rel="noopener noreferrer" className="transform hover:scale-110 transition-transform">
+                            <div className="bg-white p-4 rounded-full hover:bg-gray-200">
+                                <Linkedin size={32} className="text-red-600" />
+                            </div>
+                        </a>
+                    </div>
 
 
                     {/* Download Resume Button */}
@@ -333,73 +333,73 @@ export default function NetflixPortfolio() {
                 </div>
             </section>
 
-{/* below is time line of education */}
-<section id="education" className="py-20 bg-black text-white">
-  <div className="max-w-6xl mx-auto px-4">
-    <h2 className="text-5xl font-bold mb-12 text-white-600 border-b-4 border-red-600 pb-4 flex items-center gap-3">
-  <GraduationCap size={48} />
-  Education
-</h2>
+            {/* below is time line of education */}
+            <section id="education" className="py-20 bg-black text-white">
+                <div className="max-w-6xl mx-auto px-4">
+                    <h2 className="text-5xl font-bold mb-12 text-white-600 border-b-4 border-red-600 pb-4 flex items-center gap-3">
+                        <GraduationCap size={48} />
+                        Education
+                    </h2>
 
 
-    <div className="relative max-w-4xl mx-auto">
-      {/* Vertical line */}
-      <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-[3px] bg-gradient-to-b from-transparent via-red-400/30 to-transparent"></div>
+                    <div className="relative max-w-4xl mx-auto">
+                        {/* Vertical line */}
+                        <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-[3px] bg-gradient-to-b from-transparent via-red-400/30 to-transparent"></div>
 
-      {/* Item 1 */}
-      <div className="mb-16 flex justify-between items-center w-full">
-        <div className="w-5/12"></div>
+                        {/* Item 1 */}
+                        <div className="mb-16 flex justify-between items-center w-full">
+                            <div className="w-5/12"></div>
 
-        <div className="z-10 w-6 h-6 bg-red-600 rounded-full shadow-lg shadow-red-900"></div>
+                            <div className="z-10 w-6 h-6 bg-red-600 rounded-full shadow-lg shadow-red-900"></div>
 
-        <div className="w-5/12 bg-gray-900 p-6 rounded-lg border border-gray-800 
+                            <div className="w-5/12 bg-gray-900 p-6 rounded-lg border border-gray-800 
         hover:border-red-600 transition-all duration-700 hover:scale-105
         hover:shadow-[0_0_30px_rgba(220,38,38,0.6)]">
-          <h3 className="text-xl font-bold text-red-500">10th Grade</h3>
-          <p className="text-gray-300 mt-2">Universal Knowledge School, Satara. </p>
-          <p className="text-gray-400 text-sm mt-1">
-            Year: 2020 • Marks: 89.4%
-          </p>
-        </div>
-      </div>
+                                <h3 className="text-xl font-bold text-red-500">10th Grade</h3>
+                                <p className="text-gray-300 mt-2">Universal Knowledge School, Satara. </p>
+                                <p className="text-gray-400 text-sm mt-1">
+                                    Year: 2020 • Marks: 89.4%
+                                </p>
+                            </div>
+                        </div>
 
-      {/* Item 2 */}
-      <div className="mb-16 flex justify-between items-center w-full flex-row-reverse">
-        <div className="w-5/12"></div>
+                        {/* Item 2 */}
+                        <div className="mb-16 flex justify-between items-center w-full flex-row-reverse">
+                            <div className="w-5/12"></div>
 
-        <div className="z-10 w-6 h-6 bg-red-600 rounded-full shadow-lg shadow-red-900"></div>
+                            <div className="z-10 w-6 h-6 bg-red-600 rounded-full shadow-lg shadow-red-900"></div>
 
-        <div className="w-5/12 bg-gray-900 p-6 rounded-lg border border-gray-800 
+                            <div className="w-5/12 bg-gray-900 p-6 rounded-lg border border-gray-800 
         hover:border-red-600 transition-all duration-700 hover:scale-105
         hover:shadow-[0_0_30px_rgba(220,38,38,0.6)]">
-          <h3 className="text-xl font-bold text-red-500">12th Grade</h3>
-          <p className="text-gray-300 mt-2">Ligade Patil Junior College of Science, Karad.</p>
-          <p className="text-gray-400 text-sm mt-1">
-            Year: 2022 • Marks: 84.17%
-          </p>
-        </div>
-      </div>
+                                <h3 className="text-xl font-bold text-red-500">12th Grade</h3>
+                                <p className="text-gray-300 mt-2">Ligade Patil Junior College of Science, Karad.</p>
+                                <p className="text-gray-400 text-sm mt-1">
+                                    Year: 2022 • Marks: 84.17%
+                                </p>
+                            </div>
+                        </div>
 
-      {/* Item 3 */}
-      <div className="mb-16 flex justify-between items-center w-full">
-        <div className="w-5/12"></div>
+                        {/* Item 3 */}
+                        <div className="mb-16 flex justify-between items-center w-full">
+                            <div className="w-5/12"></div>
 
-        <div className="z-10 w-6 h-6 bg-red-600 rounded-full shadow-lg shadow-red-900"></div>
+                            <div className="z-10 w-6 h-6 bg-red-600 rounded-full shadow-lg shadow-red-900"></div>
 
-        <div className="w-5/12 bg-gray-900 p-6 rounded-lg border border-gray-800 
+                            <div className="w-5/12 bg-gray-900 p-6 rounded-lg border border-gray-800 
         hover:border-red-600 transition-all duration-700 hover:scale-105
         hover:shadow-[0_0_30px_rgba(220,38,38,0.6)]">
-          <h3 className="text-xl font-bold text-red-500">University</h3>
-          <p className="text-gray-300 mt-2">Vishwakarma Institute of Technology, Pune.</p>
-          <p className="text-gray-400 text-sm mt-1">
-            Year: 2026 • 8.19 
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-{/* Above is education timeline */}
+                                <h3 className="text-xl font-bold text-red-500">University</h3>
+                                <p className="text-gray-300 mt-2">Vishwakarma Institute of Technology, Pune.</p>
+                                <p className="text-gray-400 text-sm mt-1">
+                                    Year: 2026 • 8.19
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {/* Above is education timeline */}
 
             {/* Experience Section */}
             <section id="experience" className="min-h-screen py-20 px-4 bg-gradient-to-b from-black to-gray-900">
@@ -451,7 +451,7 @@ export default function NetflixPortfolio() {
                                     rel="noopener noreferrer"
                                     className="text-red-500 hover:text-red-400 flex items-center gap-2 font-semibold"
                                 >
-                                     <Github size={18} />
+                                    <Github size={18} />
                                 </a>
                             </div>
                         ))}
@@ -706,69 +706,69 @@ export default function NetflixPortfolio() {
             </section>
 
 
-            
+
 
             {/* Footer */}
             <footer className="bg-black border-t border-red-900 py-10 text-center">
-  {/* Social Icons */}
-  <div className="flex justify-center gap-6 mb-6">
-    
-    {/* LinkedIn */}
-    <a
-      href="https://www.linkedin.com/in/YOUR_LINKEDIN"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-gray-400 hover:text-red-500 transition-all"
-    >
-      <Linkedin
-        size={26}
-        className="hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(220,38,38,0.7)] transition-all"
-      />
-    </a>
+                {/* Social Icons */}
+                <div className="flex justify-center gap-6 mb-6">
 
-    {/* GitHub */}
-    <a
-      href="https://github.com/YOUR_GITHUB"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-gray-400 hover:text-red-500 transition-all"
-    >
-      <Github
-        size={26}
-        className="hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(220,38,38,0.7)] transition-all"
-      />
-    </a>
+                    {/* LinkedIn */}
+                    <a
+                        href="https://www.linkedin.com/in/arya--patil/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-400 hover:text-red-500 transition-all"
+                    >
+                        <Linkedin
+                            size={26}
+                            className="hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(220,38,38,0.7)] transition-all"
+                        />
+                    </a>
 
-    {/* Blogs */}
-    <a
-      href="/blogs"
-      className="text-gray-400 hover:text-red-500 transition-all"
-    >
-      <BookOpen
-        size={26}
-        className="hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(220,38,38,0.7)] transition-all"
-      />
-    </a>
+                    {/* GitHub */}
+                    <a
+                        href="https://github.com/aaryyya"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-400 hover:text-red-500 transition-all"
+                    >
+                        <Github
+                            size={26}
+                            className="hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(220,38,38,0.7)] transition-all"
+                        />
+                    </a>
 
-    {/* Email */}
-    <a
-      href="mailto:your@email.com"
-      className="text-gray-400 hover:text-red-500 transition-all"
-    >
-      <Mail
-        size={26}
-        className="hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(220,38,38,0.7)] transition-all"
-      />
-    </a>
-  </div>
+                    {/* Blogs */}
+                    <a
+                        href="/blogs"
+                        className="text-gray-400 hover:text-red-500 transition-all"
+                    >
+                        <BookOpen
+                            size={26}
+                            className="hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(220,38,38,0.7)] transition-all"
+                        />
+                    </a>
 
-  {/* Footer Text */}
-  <p className="text-gray-500">
-    © 2026 {portfolioData.name}. All rights reserved.
-  </p>
-  <p className="text-gray-600 text-sm mt-2">
-  </p>
-</footer>
+                    {/* Email */}
+                    <a
+                        href="aryampatil2005@gmail.com"
+                        className="text-gray-400 hover:text-red-500 transition-all"
+                    >
+                        <Mail
+                            size={26}
+                            className="hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(220,38,38,0.7)] transition-all"
+                        />
+                    </a>
+                </div>
+
+                {/* Footer Text */}
+                <p className="text-gray-500">
+                    © 2026 {portfolioData.name}. All rights reserved.
+                </p>
+                <p className="text-gray-600 text-sm mt-2">
+                </p>
+            </footer>
         </div>
     );
 }
