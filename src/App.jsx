@@ -80,20 +80,20 @@ export default function NetflixPortfolio() {
             {
                 title: "jabref",
                 description: "Contributed in 2+ issues ",
-                repo: "https://github.com/library/components",
+                repo: "https://github.com/JabRef/jabref/pull/14619",
                 contributions: "45+ commits, 1 PR merged"
             },
             {
                 title: "gofr",
-                description: "Added new statistical analysis functions and improved documentation. Maintained backward compatibility.",
-                repo: "https://github.com/toolkit/datascience",
+                description: "GoFr is designed to simplify microservice development, with key focuses on Kubernetes deployment and out-of-the-box observability.",
+                repo: "https://github.com/gofr-dev/gofr/pull/2525",
                 contributions: "28+ commits, 1 PR merged"
             },
             {
                 title: "Appledore",
-                description: "Implemented authentication middleware and rate limiting features. Improved API response time by 30%.",
-                repo: "https://github.com/framework/api",
-                contributions: "32+ commits, 2 PRs merged"
+                description: "Helped building a simple and efficient graph library in modern C++ which supports directed/undirected graphs with customizable edge type and vertices, designed for performance and ease of use.",
+                repo: "https://github.com/SharonIV0x86/Appledore/issues?q=state%3Aclosed%20is%3Apr%20author%3A%40me",
+                contributions: "100+ commits, 2 PRs merged"
             },
             // {
             //     title: "Machine Learning Models Repository",
