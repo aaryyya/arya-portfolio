@@ -32,7 +32,7 @@ export default function NetflixPortfolio() {
                 title: "Product Intern",
                 company: "Erfindin",
                 duration: "Jan 2025 - May 2025",
-                description: "Built VisionGuard."
+                description: "Developed VisionGuard, an innovative Android application and smart glasses system aimed at assisting blind individuals during emergencies. The application uses Firebase, ESP8266, and Node.js to provide SOS Notifications- Instantly alerts nearby responders. Real-Time Location Tracking: Continuously monitors user location for safety.Object DetectionEmploys YOLOv5 to identify obstacles in the environment."
             }
         ],
 
@@ -93,14 +93,14 @@ export default function NetflixPortfolio() {
                 title: "Appledore",
                 description: "Implemented authentication middleware and rate limiting features. Improved API response time by 30%.",
                 repo: "https://github.com/framework/api",
-                contributions: "32 commits, 10 PRs merged"
+                contributions: "32+ commits, 2 PRs merged"
             },
-            {
-                title: "Machine Learning Models Repository",
-                description: "Contributed pre-trained models for NLP tasks and created comprehensive tutorials.",
-                repo: "https://github.com/ml/models",
-                contributions: "20 commits, 6 PRs merged"
-            }
+            // {
+            //     title: "Machine Learning Models Repository",
+            //     description: "Contributed pre-trained models for NLP tasks and created comprehensive tutorials.",
+            //     repo: "https://github.com/ml/models",
+            //     contributions: "20 commits, 6 PRs merged"
+            // }
         ],
 
         technicalCertifications: [
@@ -117,11 +117,11 @@ export default function NetflixPortfolio() {
         ],
 
         participationCertificates: [
-            { name: "Global Hackathon 2024 - Winner", event: "TechCrunch Disrupt", link: "https://cert-link.com/11" },
-            { name: "AI/ML Challenge - 2nd Place", event: "Google DevFest", link: "https://cert-link.com/12" },
-            { name: "Code Marathon 2023", event: "GitHub Universe", link: "https://cert-link.com/13" },
-            { name: "Cyber Security CTF - Top 10", event: "DEF CON", link: "https://cert-link.com/14" },
-            { name: "Innovation Challenge Finalist", event: "Microsoft Ignite", link: "https://cert-link.com/15" }
+            { name: "Tata Imagination Challenge 2024: Student Track", event: "Tata Imagination Challenge 2024", link: "https://unstop.com/certificate-preview/47d919ca-f886-4701-92e6-d2864e590769" },
+            { name: "TVS Credit EPIC 6.0 - IT Track.", event: "Round 2 Qualifier", link: "https://unstop.com/certificate-preview/ca55dbf8-9a11-4c4d-859e-8715f6d59469" },
+            { name: "Myntra: WeForShe HackerRamp 2025.", event: "Round 3 Qualifier", link: "https://unstop.com/certificate-preview/3736b1e3-079b-41b7-a062-34d266561698" },
+            { name: "Adobe India Hackathon", event: "Round 2 Qulifier", link: "https://unstop.com/certificate-preview/4ab91358-4c04-4ae0-a1eb-e57a767cc275" },
+            // { name: "Innovation Challenge Finalist", event: "Microsoft Ignite", link: "https://cert-link.com/15" }
         ],
 
         skills: {
@@ -303,7 +303,7 @@ export default function NetflixPortfolio() {
 
 
                     {/* Download Resume Button */}
-                    <a href="/Arya_Patil_VIT_" download className="block mb-6">
+                    <a href="/Arya_Patil_VIT_.pdf" download className="block mb-6">
 
                         <button className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg flex items-center gap-2 mx-auto transform hover:scale-105 transition-transform font-bold text-lg">
                             <Download size={24} />
