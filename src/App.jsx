@@ -17,7 +17,6 @@ export default function NetflixPortfolio() {
         if (checkbox) checkbox.checked = false;
     };
 
-
     const portfolioData = {
         name: "Arya Patil",
         headline: "Data Science and Analysis Enthusiast | Backend Developer ",
