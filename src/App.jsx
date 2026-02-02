@@ -25,7 +25,7 @@ export default function NetflixPortfolio() {
         email: "aryampatil2005@gmail.com",
         github: "https://github.com/aaryyya",
         linkedin: "https://www.linkedin.com/in/arya--patil/",
-        resumeLink: "https://yourresume.com/resume.pdf",
+        resumeLink: "/Arya_Patil_VIT_.pdf",
 
         experience: [
             {
@@ -40,36 +40,42 @@ export default function NetflixPortfolio() {
 
             {
                 title: "Sleep Efficiency Prediction and Analysis",
+                image: "/Sleep_Efficiency.png",
                 description: "Sleep Efficiency Prediction and Analysis analyzes and predicts Sleep Efficiency (ratio of time asleep to time in bed) using machine learning techniques on lifestyle and sleep-stage data, and deploys the final model as an interactive Shiny App.",
                 tech: ["R", "Shiny"],
                 link: "https://github.com/aaryyya/sleep-efficiency-analysis-using-R"
             },
             {
                 title: "DineSync",
+                image:"",
                 description: "Developed a full-stack QR Ordering System with a real-time KDS using WebSockets, a Manager Dashboard for order management, and a mobile-first UI utilizing Redux Toolkit for live cart updates and location-based order validation.",
                 tech: ["Java", "React", "Springboot", "JDBC"],
                 link: "https://github.com/aaryyya/dinesync"
             },
             {
                 title: "Decoding Data Careers: A Power BI Analysis",
+                image:"decoding_data.png",
                 description: "Decoding Data Careers, provides an in-depth analysis of various data-related careers using Power BI. The analysis focuses on understanding career satisfaction, salary trends, and other key metrics across different countries📊.",
                 tech: ["PowerBI", "DAX"],
                 link: "https://github.com/aaryyya/decoding-data-careers-a-powerbi-analysis"
             },
             {
                 title: "ReWear: Community Clothing Exchange",
+                image:"ReWear.png",
                 description: "ReWear is a web-based platform that enables users to exchange unused clothing through direct swaps or a point-based redemption system.",
                 tech: ["HTML", "CSS", "JavaScript", "SQL", "React"],
                 link: "https://github.com/aaryyya/ReWear"
             },
             {
                 title: "QuizzIQ",
+                image:"QuizIQ.png",
                 description: "QuizzIQ is a dynamic and interactive web application designed for creating and playing engaging quizzes on various subjects.",
                 tech: ["HTML", "CSS", "BootStrap", "JavaScript"],
                 link: "https://projects-indol-six.vercel.app/home.html"
             },
             {
                 title: "TCP-IP based Client-Server Food Ordering System",
+                image:"",
                 description: "Computer Networking ",
                 tech: ["C", "TCP-IP Protocol"],
                 link: "https://github.com/aaryyya/TCP-IP-based-Client-Server-Food-Ordering-System"
@@ -437,6 +443,15 @@ export default function NetflixPortfolio() {
                                 key={index}
                                 className="bg-gray-900 p-6 rounded-lg border-2 border-gray-800 hover:border-red-600 transform hover:scale-105 hover:shadow-2xl hover:shadow-red-900 transition-all duration-700"
                             >
+                                {/* Project Preview */}
+<div className="mb-4 overflow-hidden rounded-lg border border-gray-800">
+    <img
+        src={project.image}
+        alt={`${project.title} preview`}
+        className="w-full h-48 object-cover transition-transform duration-700 hover:scale-110"
+    />
+</div>
+
                                 <h3 className="text-2xl font-bold mb-3 text-white-500">{project.title}</h3>
                                 <p className="text-gray-300 mb-4">{project.description}</p>
                                 <div className="flex flex-wrap gap-2 mb-4">
@@ -664,7 +679,7 @@ export default function NetflixPortfolio() {
                 </p>
 
                 <a
-                    href="https://your-blog-link.com"
+                    href="https://medium.com/@aryampatil2005"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block bg-red-600 text-white px-10 py-4 rounded-lg font-bold text-lg
@@ -742,7 +757,7 @@ export default function NetflixPortfolio() {
 
                     {/* Blogs */}
                     <a
-                        href="/blogs"
+                        href="https://medium.com/@aryampatil2005"
                         className="text-gray-400 hover:text-red-500 transition-all"
                     >
                         <BookOpen
