@@ -46,7 +46,7 @@ export default function NetflixPortfolio() {
             },
             {
                 title: "DineSync",
-                image:"",
+                image:"DineSync.png",
                 description: "Developed a full-stack QR Ordering System with a real-time KDS using WebSockets, a Manager Dashboard for order management, and a mobile-first UI utilizing Redux Toolkit for live cart updates and location-based order validation.",
                 tech: ["Java", "React", "Springboot", "JDBC"],
                 link: "https://github.com/aaryyya/dinesync"
@@ -74,7 +74,7 @@ export default function NetflixPortfolio() {
             },
             {
                 title: "TCP-IP based Client-Server Food Ordering System",
-                image:"",
+                image:"Restaurant.png",
                 description: "Computer Networking ",
                 tech: ["C", "TCP-IP Protocol"],
                 link: "https://github.com/aaryyya/TCP-IP-based-Client-Server-Food-Ordering-System"
